@@ -46,6 +46,7 @@ while True:
 			#Wrong Spelling
 			#Imma improve this alg in the future eventually
 			fl = cmd0[0]
+			#I do not know how to replace the sql wildcard with a variable despite searching thoroughly so my only choice was this :(
 			if fl == "a":
 				verbs = db.execute("select verb from verbs where verb like 'a%'")
 			if fl == "b":
@@ -78,6 +79,18 @@ while True:
                                 verbs = db.execute("select verb from verbs where verb like 'o%'")
 			if fl == "p":
                                 verbs = db.execute("select verb from verbs where verb like 'p%'")
+			if fl == "q":
+                                verbs = db.execute("select verb from verbs where verb like 'q%'")
+			if fl == "r":
+                                verbs = db.execute("select verb from verbs where verb like 'r%'")
+			if fl == "s":
+                                verbs = db.execute("select verb from verbs where verb like 's%'")
+			if fl == "t":
+                                verbs = db.execute("select verb from verbs where verb like 't%'")
+			if fl == "u":
+                                verbs = db.execute("select verb from verbs where verb like 'u%'")
+			if fl == "v":
+                                verbs = db.execute("select verb from verbs where verb like 'v%'")
 			if int(len(verbs)) < 1:
 				print("No match mf!")
 				#sys.exit(1)
